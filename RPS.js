@@ -3,17 +3,31 @@ function getRandomInt(max) {
 }
 
 function getRPSChoice(num) {
-    switch (num) {
-        case 1:
-            return "Rock";
-        case 2:
-            return "Paper";
-        case 3:
-            return "Scissors";
-        default: return "Rock";
+    choices = ["Rock", "Paper", "Scissors"];
+    return choices[num];
+}
+
+function gamingSession(playerChoice, cpuChoice) {
+    if (playerChoice == cpuChoice) return "It's a draw!";
+    if (playerChoice == wins.get(cpuChoice)) {
+        return "You lose! " + cpuChoice + " beats " + playerChoice.toLowerCase() + "!";
+    }
+    else if (cpuChoice == wins.get(playerChoice)) {
+        return "You win! " + playerChoice + " beats " + cpuChoice.toLowerCase() + "!";
     }
 }
 
-promptString = ("Take your pick. Rock(1), paper(2) or scissors(3)?");
-choice = getRPSChoice(parseInt(promptString));
-computerChoice = getRPSChoice(getRandomInt(2) + 1);
+const prompt = require("prompt-sync")();
+const wins = new Map();
+wins.set("Rock", "Scissors");
+wins.set("Paper", "Rock");
+wins.set("Scissors", "Paper");
+
+function runGame() {
+    promptString = ("Take your pick. Rock(1), paper(2) or scissors(3)? "); 
+    yourChoice = getRPSChoice(parseInt(prompt(promptString)) - 1);
+    computerChoice = getRPSChoice(getRandomInt(2));
+    console.log(gamingSession(yourChoice, computerChoice));
+}
+
+runGame();
