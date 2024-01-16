@@ -37,3 +37,22 @@ const mainDiv = document.querySelector(".bigHolder");
 const firstDiv = document.querySelector("#firstDiv");
 firstDiv.style.backgroundColor = "#01818A";
 firstDiv.style.color = "#F2F2F2"
+const redPara = document.createElement('p');
+const h3elem = document.createElement('h3');
+mainDiv.append(redPara);
+mainDiv.append(h3elem);
+const secondDiv = document.createElement('div');
+const h1elem = document.createElement('h1');
+const metooPara = document.createElement('p');
+
+redPara.textContent = "Hey, I'm red!";
+redPara.style.color = 'red';
+h3elem.textContent = "I'm a blue h3!";
+h3elem.style.color = "blue";
+h1elem.textContent = "I'm in a div!";
+metooPara.textContent = "ME TOO!";
+secondDiv.style.backgroundColor = "pink";
+secondDiv.style.border = "2px solid black";
+secondDiv.append(h1elem);
+secondDiv.append(redPara);
+mainDiv.append(secondDiv);
