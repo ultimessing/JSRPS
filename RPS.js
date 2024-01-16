@@ -30,4 +30,7 @@ function runGame() {
     console.log(gamingSession(yourChoice, computerChoice));
 }
 
-runGame();
+// runGame();
+ 
+const firstDiv = document.querySelector(".centerText");
+firstDiv.style.color = "blue";
