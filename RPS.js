@@ -32,37 +32,3 @@ function runGame() {
 
 // runGame();
 
-
-const mainDiv = document.querySelector(".bigHolder");
-const firstDiv = document.querySelector("#firstDiv");
-const flexCont = document.createElement('div');
-const secondDiv = document.createElement('div');
-const h1elem = document.createElement('h1');
-const h3elem = document.createElement('h3');
-const metooPara = document.createElement('p');
-const redPara = document.createElement('p');
-const secondButton = document.createElement('button');
-firstDiv.style.backgroundColor = "#01818A";
-firstDiv.style.color = "#F2F2F2";
-redPara.textContent = "Hey, I'm red!";
-redPara.style.color = 'red';
-h3elem.textContent = "I'm a blue h3!";
-h3elem.style.color = "blue";
-h1elem.textContent = "I'm in a div!";
-metooPara.textContent = "ME TOO!";
-secondDiv.style.backgroundColor = "pink";
-secondDiv.style.border = "2px solid black";
-flexCont.style.display = 'flex';
-flexCont.style.justifyContent = 'center';
-flexCont.style.margin = "5%";
-secondButton.style.width = "40px";
-secondButton.style.height = "40px";
-mainDiv.append(redPara);
-mainDiv.append(h3elem);
-secondDiv.append(h1elem);
-secondDiv.append(redPara);
-mainDiv.append(secondDiv);
-mainDiv.append(flexCont);
-flexCont.append(secondButton);
-secondButton.addEventListener('click', () => console.log("hiiii!"));
-secondButton.addEventListener('click', function (e) { e.target.style.backgroundColor = '#01818A' });
