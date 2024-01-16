@@ -17,11 +17,11 @@ function gamingSession(playerChoice, cpuChoice) {
     }
 }
 
-const prompt = require("prompt-sync")();
-const wins = new Map();
-wins.set("Rock", "Scissors");
-wins.set("Paper", "Rock");
-wins.set("Scissors", "Paper");
+// const prompt = require("prompt-sync")();
+// const wins = new Map();
+// wins.set("Rock", "Scissors");
+// wins.set("Paper", "Rock");
+// wins.set("Scissors", "Paper");
 
 function runGame() {
     promptString = ("Take your pick. Rock(1), paper(2) or scissors(3)? "); 
@@ -32,5 +32,8 @@ function runGame() {
 
 // runGame();
  
-const firstDiv = document.querySelector(".centerText");
-firstDiv.style.color = "blue";
+
+const mainDiv = document.querySelector(".bigHolder");
+const firstDiv = document.querySelector("#firstDiv");
+firstDiv.style.backgroundColor = "#01818A";
+firstDiv.style.color = "#F2F2F2"
