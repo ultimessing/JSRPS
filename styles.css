@@ -1,15 +1,70 @@
-.centerText {
+.bigHolder {
     display: flex;
-    justify-content: center;
-    /* text-align: center; */
+    flex-direction: column;
+    min-width: 320px;
+    background-color: #29274c;
+    color: #f8f7f9;
 }
 
-.flexcont {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
+header {
+    display: flex;
+    justify-content: flex-start;
 }
+
+.navBar {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10%;
+    font-size: 1.5em;
+}
+
+.bigTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.buttonHolder {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.buttonHolder button {
+    border: 1px solid #f8f7f9;
+    border-radius: 10px;
+    flex-basis: 1;
+    width: 250px;
+    height: 250px;
+    align-items: start;
+    justify-content: start;
+}
+
+.buttonHolder img {
+    align-self: center;
+}
+
+.pickItem1 {
+    background: url("Images/rock.png");
+    background-size:contain; 
+}
+.pickItem2 {
+    background: url("Images/paper.png");
+    background-size:contain; 
+}
+.pickItem3 {
+    background: url("Images/scissors.png");
+    background-size:contain; 
+}
+
 body {
-    margin:0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
 }
