@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     min-width: 320px;
-    background-color: #29274c;
+    /* background-color: #1e1c36; */
+    background-color: #1d1c28;
     color: #f8f7f9;
 }
 
@@ -26,13 +27,19 @@ header {
 
 .buttonHolder {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-self: center;
+    min-width: 60%;
     flex: 1;
     flex-wrap: wrap;
-    gap: 1em;
-    margin-top: 1em;
+    gap: 5%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    max-width: 1280px;
     margin-left: 1em;
     margin-right: 1em;
+    background-color: #1d1c28;
+    /* background-color: #1e1c36; */
 }
 
 .buttonHolder button {
@@ -42,6 +49,7 @@ header {
     width: 250px;
     height: 250px;
     align-items: start;
+    margin:2em;
     justify-content: start;
     transition:0.1s;
 }
