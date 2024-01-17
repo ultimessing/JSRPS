@@ -11,7 +11,9 @@
     background-color: #1d1c28;
     color: #f8f7f9;
 }
-
+#wojak {
+    align-self: center;
+}
 header {
     display: flex;
     justify-content: flex-start;
@@ -117,10 +119,28 @@ header {
     max-width: 100px
 }
 
+
+html {
+    height: 100vh;
+}
+
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
     font-family: "Roboto", sans-serif;
     background-color: #1d1c28;
+    height:100vh;
+}
+
+.endOfDoc {
+    display: flex;
+    background-color: #13121a;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    color:#f8f7f9;
+    gap:2em;
+    margin:0;
+    padding:0;
 }
